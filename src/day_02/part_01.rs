@@ -4,7 +4,7 @@ use std::fs;
 pub fn solve() -> (i32, i32) {
     let end_position = fs::read_to_string("./src/day_02/data/puzzle.txt")
         .expect("collection of commands")
-        .split('\n')
+        .lines()
         .map(|s| parse(&s))
         .fold((0, 0), execute_command);
     end_position

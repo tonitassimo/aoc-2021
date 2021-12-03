@@ -3,7 +3,7 @@ use std::fs;
 pub fn solve() -> i32 {
     let numbers: Vec<_> = fs::read_to_string("./src/day_01/data/puzzle.txt")
         .expect("Something went wrong reading the file")
-        .split('\n')
+        .lines()
         .map(|s| s.parse::<i32>().unwrap_or(0))
         .collect();
     let sums: Vec<_> = numbers
