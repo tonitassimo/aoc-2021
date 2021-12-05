@@ -8,7 +8,7 @@ const DAY_01: bool = false;
 const DAY_02: bool = false;
 const DAY_03: bool = false;
 const DAY_04: bool = false;
-const DAY_05: bool = false;
+const DAY_05: bool = true;
 
 fn main() {
     if DAY_01 {
